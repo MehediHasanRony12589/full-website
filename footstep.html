@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foot Step Power Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Section Styles */
+
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+/* Image in White Box */
+.image-box {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensures the box stays responsive */
+    overflow: hidden; /* Prevents image from overflowing */
+    margin: 0 auto; /* Centers the box */
+}
+
+.white-box img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.white-box img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Project Details Section */
+.project-details {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project-details h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.features ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-item {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item .feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 14px;
+}
+
+/* Footer Styles */
+
+
+footer p {
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .nav-links {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+
+    .feature-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .white-box img {
+        width: 100%; /* Ensures responsiveness on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .feature-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .white-box img {
+        width: 100%; /* Ensures image fits small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .project-details h3 {
+        font-size: 24px;
+    }
+
+    .project-details p {
+        font-size: 14px;
+    }
+
+    .features h3 {
+        font-size: 24px;
+    }
+
+    .feature-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .white-box img {
+        width: 100%; /* Ensures image is responsive on mobile screens */
+    }
+}
+</style>
+<body>
+    
+
+    <section class="intro">
+        <div class="container">
+            <h2>Harnessing Human Energy for Everyday Needs</h2>
+            <p>Our project aims to generate power using stairs in public places, enabling sustainable energy solutions for everyday applications.</p>
+        </div>
+    </section>
+
+    <section class="image-box">
+        <div class="container">
+            <div class="white-box">
+                <img src="img/innovation/footpower.jpg" alt="Footstep Power Generator Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="container">
+            <h3>Project Overview</h3>
+            <p>This project focuses on utilizing kinetic energy from foot traffic on stairs to generate electricity, which can be used to power everyday devices and reduce dependence on non-renewable sources.</p>
+            <p>The primary goal is to create a system that efficiently captures human energy and converts it into electrical power using piezoelectric technology.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Key Features</h3>
+            <ul>
+                <li class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </div>
+                    <h4>Sustainable Energy</h4>
+                    <p>Using foot traffic to generate power is an eco-friendly solution to meet energy demands in public spaces.</p>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+                    <h4>Simple Installation</h4>
+                    <p>The system can be easily integrated into existing public infrastructure like staircases in high-traffic areas.</p>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-bolt"></i>
+                    </div>
+                    <h4>Efficient Power Generation</h4>
+                    <p>Efficient conversion of kinetic energy into usable electricity to power small devices and lighting.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="color: #3498db;">&copy; 2025 Foot Step Power Generator. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

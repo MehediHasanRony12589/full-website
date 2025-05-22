@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advance Home Automation (IoT)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    .hero {
+      width: 100%;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+    h1:hover, h2:hover, h3:hover {
+      color: #e53935;
+    }
+    p, li {
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .meta, .keywords {
+      margin-bottom: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .meta:hover, .keywords:hover {
+      background-color: #e3f2fd;
+      color: #1a73e8;
+    }
+    .keywords {
+      font-style: italic;
+      background: #f0f0f0;
+      padding: 10px;
+      border-left: 4px solid #1a73e8;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="img/innovation/home automation.jpg" alt="Advance Home Automation Image" />
+  </div>
+  <div class="container">
+    <h1>Advance Home Automation (IoT)</h1>
+    <div class="meta">
+      <strong>Authors:</strong> Mehedi Hasan Roni, Md Tasrik Hossain, Md Siyam Sorkar<br />
+      <strong>Institution:</strong> Cumilla Polytechnic Institute<br />
+      <strong>Organization:</strong> Creativity Icon
+    </div>
+
+    <div class="section">
+      <h2>Abstract</h2>
+      <p>With the rapid evolution of smart technologies, automation has transformed the way modern homes operate. This thesis introduces Advance Home Automation, a budget-friendly, compact, and highly adaptable automation system designed to control essential household devices such as lights, fans, water pumps, regulators, lifts, and generators...</p>
+    </div>
+
+    <div class="keywords">
+      <strong>Keywords:</strong> Home Automation, IoT, NFC, Smart Home, Wi-Fi Control, Bluetooth Connectivity, Remote Access, Smart Energy, Affordable Smart Systems
+    </div>
+
+    <div class="section"><h2>1. Introduction</h2><p>In an era driven by automation and connectivity, smart homes are no longer a futuristic luxury but a modern necessity. However, most advanced home automation systems remain costly, complex, or inaccessible to a large segment of society, especially in developing countries. Recognizing this gap, we developed Advance Home Automation, a locally designed and implemented system in Bangladesh, offering affordable and accessible smart control over key electrical appliances.
+        This system enables automatic control of home electronics via alarms and schedules, offering both Wi-Fi and offline Bluetooth access, alongside NFC-triggered night mode and support for universal remote controllers. The device is currently installed in multiple residential setups and has demonstrated excellent performance in daily use.
+        </p></div>
+    <div class="section"><h2>2. Problem Statement</h2><p>Despite the availability of smart home technologies, most systems are:</p><ul><li>Expensive</li><li>Dependent on continuous internet</li><li>Limited in control range</li><li>Difficult to install or integrate</li></ul></div>
+    <div class="section"><h2>3. Objectives</h2><ul><li>To develop a cost-effective and compact smart controller.</li><li>To ensure remote and offline control (via Wi-Fi and Bluetooth).</li>
+    <li>To automate essential household utilities: light, fan, water pump, lift, regulator, generator.</li>
+    <li>To support custom alarms and schedules for automation.</li>
+    <li>To provide an NFC-based night mode activation.</li>
+    <li>To allow control via TV/AC remotes, increasing user flexibility.</li>
+    <li> To integrate with a custom mobile application (under development).</li>
+    
+    </ul></div>
+    <div class="section"><h2>4. Literature Review</h2><p>SmartThings offer extensive automation capabilities. However, these systems:</p>
+    <ul>
+
+        <li>
+            Are priced at a premium.
+        </li>
+        <li>Require cloud connectivity.</li>
+    <li>Often do not support offline operation.</li>
+    <li>May not be compatible with local infrastructure in Bangladesh.</li>
+    <p> Studies on IoT-based smart homes ([1], [2]) emphasize the importance of local control, data privacy, and cost-effective implementation. Our work builds upon these principles, providing a practical alternative specifically designed for Bangladeshi users.</p>
+    </ul>
+    
+    </div>
+    <h2>5. Methodology</h2>
+  <p>The Advance Home Automation system was developed in multiple phases:</p>
+  <h3>Phase 1: Design & Planning</h3>
+  <ul>
+    <li>Identified key appliances to automate.</li>
+    <li>Chose components for low-cost, low-power operation.</li>
+  </ul>
+  <h3>Phase 2: Hardware Development</h3>
+  <ul>
+    <li>Used microcontrollers (e.g., ESP8266 for Wi-Fi and Bluetooth capability).</li>
+    <li>Integrated relay modules for switching high-voltage appliances.</li>
+    <li>Built custom PCB for compactness.</li>
+  </ul>
+  <h3>Phase 3: Software & Scheduling</h3>
+  <ul>
+    <li>Developed embedded code for automation via alarms and timers.</li>
+    <li>Configured NFC triggers using Android-compatible NFC tags.</li>
+    <li>Enabled cross-platform access using standard remote controllers.</li>
+  </ul>
+  <h3>Phase 4: Testing & Installation</h3>
+  <ul>
+    <li>Installed prototypes in multiple residential buildings.</li>
+    <li>Evaluated functionality under different scenarios (with and without internet).</li>
+  </ul>
+
+  <div class="section">
+    <h2>6. System Design and Implementation</h2>
+    <p>The Advance Home Automation system is built on a modular architecture that combines affordability, scalability, and reliability. The hardware and software components are integrated to deliver real-time, scheduled, and remote-controlled automation capabilities.</p>
+    <h3>6.1. Hardware Components</h3>
+    <p>The core hardware module consists of the following components:</p>
+    <ul>
+      <li><strong>Microcontroller:</strong> ESP8266 (NodeMCU) — provides Wi-Fi and Bluetooth capabilities.</li>
+      <li><strong>Relay Modules:</strong> Two-channel relays for controlling high-voltage AC appliances such as lights, fans, water pumps, and generators.</li>
+      <li><strong>Power Supply Circuit:</strong> Includes voltage regulation to provide stable 5V/3.3V to microcontroller and relays.</li>
+      <li><strong>NFC Module:</strong> Allows users to switch to “Night Mode” by simply tapping an NFC tag.</li>
+      <li><strong>Infrared Receiver:</strong> Compatible with standard TV and AC remotes for manual triggering.</li>
+      <li><strong>Printed Circuit Board (PCB):</strong> Custom-designed for compact integration and durability.</li>
+    </ul>
+  
+    <h3>6.2. Software Architecture</h3>
+    <ul>
+      <li>Embedded C/C++ was used to program the microcontroller.</li>
+      <li>Alarm and scheduling logic was implemented using Real-Time Clock (RTC) libraries.</li>
+      <li>Wi-Fi connectivity was configured through MQTT and HTTP protocols for remote commands.</li>
+      <li>Bluetooth fallback enabled direct control in offline scenarios via a dedicated mobile app (in development).</li>
+      <li>NFC tags were programmed with predefined actions to activate night mode (e.g., dimming lights, disabling fans, etc.).</li>
+    </ul>
+  
+    <h3>6.3. Control Interfaces</h3>
+    <ul>
+      <li><strong>Remote Control:</strong> Universal IR remote compatibility.</li>
+      <li><strong>Mobile App (Upcoming):</strong> A cross-platform app will provide an intuitive GUI for managing all connected devices, schedules, and modes.</li>
+      <li><strong>Voice Assistants (Planned):</strong> Future integration with voice-based systems like Google Assistant or Alexa.</li>
+    </ul>
+  
+    <h3>6.4. Installation</h3>
+    <ul>
+      <li>Devices are plug-and-play compatible with traditional switchboards and home wiring.</li>
+      <li>Already installed in flats, homes, and apartments across several locations in Bangladesh.</li>
+    </ul>
+    <div class="section">
+        <h2>7. Results and Impact</h2>
+        <p>After three months of real‑life deployment, the system achieved the following:</p>
+        <table>
+          <tr><th>Metric</th><th>Result</th></tr>
+          <tr><td>Devices Supported</td><td>6+ (Lights, Fans, Pump, Lift, etc.)</td></tr>
+          <tr><td>Internet Requirement</td><td>No (Bluetooth fallback enabled)</td></tr>
+          <tr><td>Control Range</td><td>50 m + via Bluetooth; Global via Wi‑Fi</td></tr>
+          <tr><td>Power Consumption</td><td>&lt; 2 W idle; up to 6 W active</td></tr>
+          <tr><td>User Satisfaction Rate</td><td>95% + (informal interviews)</td></tr>
+          <tr><td>Units Installed</td><td>10 + households</td></tr>
+        </table>
+        <h3>7.1. User Feedback</h3>
+        <ul>
+          <li><strong>Real‑world Deployment:</strong> Installed in diverse residential settings across Bangladesh.</li>
+          <li><strong>Affordability:</strong> Approximately 80 % cheaper than comparable imported systems.</li>
+          <li><strong>Ease of Use:</strong> No technical expertise required.</li>
+          <li><strong>Compact Design:</strong> Fits behind traditional switchboards.</li>
+          <li><strong>Flexibility:</strong> Seamless operation both online and offline.</li>
+        </ul>
+        <h3>7.2. Sustainability</h3>
+        <p>Scheduled shutdown of lights and fans has reduced unnecessary energy consumption, promoting efficient electricity use in urban areas prone to energy waste.</p>
+      
+        <div class="section">
+            <h2>8. Limitations</h2>
+            <ul>
+              <li><strong>No Mobile App Yet:</strong> Full user interface is still under development, limiting centralized control.</li>
+              <li><strong>Limited Device Support per Unit:</strong> The current module supports only 2–4 devices, requiring expansion for larger setups.</li>
+              <li><strong>Manual Configuration:</strong> Initial installation and setup require basic electrical knowledge, which may limit accessibility for all users.</li>
+              <li><strong>Lack of Security Layer:</strong> Currently, the system lacks encryption for remote commands, posing potential risks in connected environments.</li>
+            </ul>
+          
+            <div class="section">
+                <h2>9. Future Work</h2>
+                <ul>
+                  <li><strong>Mobile App Launch:</strong> Development and release of a fully-featured mobile app for automation, scheduling, and remote access.</li>
+                  <li><strong>Device Expansion:</strong> Integration of new modules to support air conditioners, smart locks, and security cameras.</li>
+                  <li><strong>Voice Assistant Integration:</strong> Compatibility with Google Assistant and Amazon Alexa for voice-based control.</li>
+                  <li><strong>Security Enhancements:</strong> Implementation of end-to-end encrypted communication to protect user data and commands.</li>
+                  <li><strong>Cloud Analytics:</strong> Real-time energy usage and appliance monitoring via cloud dashboards.</li>
+                  <li><strong>AI-Driven Automation:</strong> Incorporating AI to learn user behavior and dynamically optimize schedules and energy usage.</li>
+                </ul>
+              </div>
+    <div class="section"><h2>10. Conclusion</h2><p>This thesis presents Advance Home Automation, a practical, affordable, and efficient system designed to meet the automation needs of everyday homes in Bangladesh. By integrating Wi-Fi, Bluetooth, NFC, and universal remote features, this system addresses a wide range of user scenarios — from internet-free environments to full remote operation.
+        Most importantly, the system is already deployed and successfully functioning in several homes, flats, and apartments in Bangladesh, confirming its real-world viability and demand.
+        Its compact size, low cost, and ease of installation make it ideal for both individual households and developers of modern smart apartments. With ongoing improvements like mobile application development and expanded device support, this innovation has the potential to become a standard solution in Bangladesh’s transition toward smart living.
+        </p></div>
+
+    <div class="section">
+      <h2>References</h2>
+      <ol>
+        <li>A. Smith, J. Kim, and L. Johnson, “IoT-Based Smart Home System with Local Control,” IEEE Access, 2022.</li>
+        <li>M. Rahman and S. Chowdhury, “Affordable Home Automation in Developing Regions,” IEEE Trans., 2021.</li>
+        <li>A. Tanveer et al., “Bluetooth and Wi-Fi Dual Control Systems,” Proc. Int. Conf., 2020.</li>
+        <li>T. Hasan and R. Alam, “Use of NFC in Domestic Automation,” Bangladesh Journal of Technology, 2023.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
